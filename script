@@ -1,0 +1,8 @@
+# set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 500, 350 
+# set output 'datastrings.1.png'
+
+
+set style data histogram
+set style fill solid border -1
+plot [0:20][0:200]'dataforplot' using 2:xticlabels(1) title columnheader
+pause -1
